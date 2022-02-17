@@ -1,0 +1,15 @@
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\moent.exe
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\moent.deps.json
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\moent.runtimeconfig.json
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\moent.dll
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\ref\moent.dll
+C:\Users\ivt44\KU\SU\self\moent\bin\Debug\net6.0\moent.pdb
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.csproj.AssemblyReference.cache
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.AssemblyInfoInputs.cache
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.AssemblyInfo.cs
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.csproj.CoreCompileInputs.cache
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.dll
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\ref\moent.dll
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.pdb
+C:\Users\ivt44\KU\SU\self\moent\obj\Debug\net6.0\moent.genruntimeconfig.cache
