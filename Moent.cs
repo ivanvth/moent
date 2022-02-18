@@ -4,6 +4,7 @@ namespace moent {
         public static string Convert(double amount) {
             int earsLeftover = (int)(amount * 100);
             var money = new Dictionary<string, int>();
+            double total = 0;
             while (earsLeftover >= 50) {
                 switch (earsLeftover) {
                     case >= 1000_00:
@@ -14,6 +15,7 @@ namespace moent {
                             money.Add(thousands, 1);
                         }
                         earsLeftover -= 1000_00;
+                        total += 1000;
                         break;
                     case >= 500_00:
                         string fiveHundreds = "Femhundredekronesedler";
@@ -23,6 +25,7 @@ namespace moent {
                             money.Add(fiveHundreds, 1);
                         }
                         earsLeftover -= 500_00;
+                        total += 500;
                         break;
                     case >= 200_00:
                         string twoHundreds = "Tohundredekronesedler";
@@ -32,6 +35,7 @@ namespace moent {
                             money.Add(twoHundreds, 1);
                         }
                         earsLeftover -= 200_00;
+                        total += 200;
                         break;
                     case >= 100_00:
                         string hundreds = "Hundredekronesedler";
@@ -41,6 +45,7 @@ namespace moent {
                             money.Add(hundreds, 1);
                         }
                         earsLeftover -= 100_00;
+                        total += 100;
                         break;
                     case >= 50_00:
                         string fifties = "Halvtredskronesedler";
@@ -50,6 +55,7 @@ namespace moent {
                             money.Add(fifties, 1);
                         }
                         earsLeftover -= 50_00;
+                        total += 50;
                         break;
                     case >= 20_00:
                         string twenties = "Tyvere";
@@ -59,6 +65,7 @@ namespace moent {
                             money.Add(twenties, 1);
                         }
                         earsLeftover -= 20_00;
+                        total += 20;
                         break;
                     case >= 10_00:
                         string tens = "Tiere";
@@ -68,6 +75,7 @@ namespace moent {
                             money.Add(tens, 1);
                         }
                         earsLeftover -= 10_00;
+                        total += 10;
                         break;
                     case >= 5_00:
                         string fives = "Femmere";
@@ -77,6 +85,7 @@ namespace moent {
                             money.Add(fives, 1);
                         }
                         earsLeftover -= 5_00;
+                        total += 5;
                         break;
                     case >= 2_00:
                         string twos = "Tokroner";
@@ -86,6 +95,7 @@ namespace moent {
                             money.Add(twos, 1);
                         }
                         earsLeftover -= 2_00;
+                        total += 2;
                         break;
                     case >= 1_00:
                         string ones = "Enkroner";
@@ -95,6 +105,7 @@ namespace moent {
                             money.Add(ones, 1);
                         }
                         earsLeftover -= 1_00;
+                        total += 1;
                         break;
                     case >= 50:
                         string pointFifties = "Halvtredsører";
@@ -104,6 +115,7 @@ namespace moent {
                             money.Add(pointFifties, 1);
                         }
                         earsLeftover -= 50;
+                        total += .5;
                         break;
                 }
             }
@@ -112,12 +124,12 @@ namespace moent {
             foreach (var kvp in money) {
                 string k = kvp.Key;
                 int v = kvp.Value;
-                rs += String.Format("{0, -22}: {1, 7}\n", k, v);
+                rs += String.Format("{0, -25}: {1, 7}\n", k, v);
             }
             
 
             rs += line;
-            rs += String.Format("{0}: {1} kroner.\n", "I alt", amount);
+            rs += String.Format("{0}: {1:C2} \n", "I alt", total);
             rs += line;
             return rs;
         }
