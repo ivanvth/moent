@@ -126,7 +126,7 @@ namespace moent {
                 int v = kvp.Value;
                 rs += String.Format("{0, -25}: {1, 7}\n", k, v);
             }
-            
+
 
             rs += line;
             rs += String.Format("{0}: {1:C2} \n", "I alt", total);
